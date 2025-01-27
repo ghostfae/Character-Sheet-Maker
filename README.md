@@ -1,2 +1,2 @@
 # Character Sheet Maker
- Create a character sheet for D&D 5e
+ Create a character sheet for Monsterhearts 2
