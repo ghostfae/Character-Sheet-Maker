@@ -1,18 +1,26 @@
 ﻿namespace Monsterhearts;
 
 
-internal class CharacterCreator
+internal class CharacterCreatorConsole
 {
    static void Main()
    {
       Console.WriteLine("Welcome to your Monsterhearts 2 character creator.");
       Console.WriteLine("This works by typing the number of your selection.");
       Console.WriteLine("Let's begin.");
+
+      CreateSkin();
    }
 
-   static void /*SkinSheet*/ CreateSkin(SkinBase skinBase)
+   static void /*SkinSheet*/ CreateSkin()
    {
+      var skins = Enum.GetNames(typeof(Skins));
+
       Console.WriteLine("First, please select a skin to learn more.");
+      for (int i = 0; i < skins.Length; i++)
+      {
+         Console.WriteLine($"{i + 1}. {skins[i]}");
+      }
       var userInput = Console.ReadLine();
 
 

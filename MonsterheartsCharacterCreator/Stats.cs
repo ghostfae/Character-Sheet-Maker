@@ -1,9 +1,9 @@
 ﻿namespace Monsterhearts;
 
-public record Stats
+public record Stats(int hot, int cold, int vol, int dark)
 {
-   public int Hot;
-   public int Cold;
-   public int Volatile;
-   public int Dark;
+   public int Hot = hot;
+   public int Cold = cold;
+   public int Volatile = vol;
+   public int Dark = dark;
 }

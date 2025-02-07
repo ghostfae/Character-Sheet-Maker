@@ -1,8 +1,8 @@
 ﻿namespace Monsterhearts;
 
-public class Moves
+public class Moves(Skins type, string name, string description)
 {
-   public Skins Type;
-   public string Name;
-   public string Description;
+   public Skins Type = type;
+   public string Name = name;
+   public string Description = description;
 }
